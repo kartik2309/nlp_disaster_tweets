@@ -1,0 +1,9 @@
+numpy
+torch==1.10
+transformers
+nltk
+pandas
+pyyaml
+torchtext
+emoji
+URLExtract

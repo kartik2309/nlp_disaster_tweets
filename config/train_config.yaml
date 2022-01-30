@@ -1,0 +1,33 @@
+lstmmodel:
+  batch_size: 32
+  epochs: 20
+  is_checkpoint: False
+  save_path: /content/drive/MyDrive/GoogleColab/Kaggle/Artifacts/nlp_disaster_tweets/Models/lstmmodel/
+  model_name: lstmmodel4
+  optimizer: 'adam'
+  loss_fn: 'crossentropy'
+  lr: 1e-4
+
+berttweet_config:
+  batch_size: 32
+  epochs: 20
+  is_checkpoint: False
+  save_path: /content/drive/MyDrive/GoogleColab/Kaggle/Artifacts/nlp_disaster_tweets/Models/bertmodel/
+  model_name: bertmodel5
+  lr: 1e-6
+
+frozen_bert:
+  batch_size: 32
+  epochs: 20
+  is_checkpoint: False
+  save_path: /content/drive/MyDrive/GoogleColab/Kaggle/Artifacts/nlp_disaster_tweets/Models/frozen_bert/
+  model_name: frozenbert1
+  lr: 1e-6
+
+bert_reg:
+  batch_size: 16
+  epochs: 20
+  is_checkpoint: False
+  save_path: /content/drive/MyDrive/GoogleColab/Kaggle/Artifacts/nlp_disaster_tweets/Models/bert_reg/
+  model_name: bert_reg1
+  lr: 1e-6

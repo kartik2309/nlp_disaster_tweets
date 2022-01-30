@@ -1,0 +1,50 @@
+lstmmodel:
+  embedding_module:
+    num_embedding: 16384
+    embedding_dim: 256
+  lstm_module:
+    input_size: 256
+    hidden_size: 256
+    num_layers: 1
+    dropout: 0.1
+  linear_module:
+    in_features: 256
+    hidden_features: []
+    out_features: 2
+    dropout: 0.5
+    activation: 'relu'
+
+berttweet_config:
+  linear_module:
+    in_features: 1024
+    hidden_features: [ ]
+    out_features: 2
+    dropout: 0.5
+    activation: 'relu'
+
+frozen_bert:
+  bert_module:
+    pretrained_model: 'vinai/bertweet-large'
+  lstm_module:
+    input_size: 1024
+    hidden_size: 1024
+    num_layers: 1
+    dropout: 0.1
+  linear_module:
+    in_features: 1024
+    hidden_features: [ ]
+    out_features: 2
+    dropout: 0.5
+    activation: 'relu'
+
+bert_reg:
+  bert_module:
+    pretrained_model: 'bert-base-uncased'
+  linear_module:
+    in_features: 768
+    hidden_features: [ ]
+    out_features: 2
+    dropout: 0.5
+    activation: 'relu'
+
+
